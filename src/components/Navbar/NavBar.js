@@ -1,11 +1,13 @@
 import React from "react";
 import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import logo from '../../assets/logorous.png';
+import './NavBar.css'
 
 const NavBar = () => {
   return (
     <Navbar style={{backgroundColor: '#fcd5ce'}} expand="lg">
   <Container fluid>
-    <img src='../assets/logorous.png'/>
+    <img className='logo' src={logo}/>
     <Navbar.Brand href="#">Rous beauty</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
