@@ -1,13 +1,18 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap';
+import "./Carrusel.css"
 import imagen1 from '../../assets/sombras.jpg'
+import imagen2 from '../../assets/miselaneo.jpg'
+import imagen3 from '../../assets/bases.png'
 
 const Carrusel = () => {
     return (
-        <Carousel>
+      <div class="row justify-content-center">
+      <div class="col-sm-8">
+        <Carousel className='campo' >
         <Carousel.Item>
-          <img
-            className="d-block w-100"
+          <img className="carrusel"
+            
             src={imagen1}
             alt="First slide"
           />
@@ -17,9 +22,9 @@ const Carrusel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+          <img className="carrusel"
+            
+            src={imagen2}
             alt="Second slide"
           />
       
@@ -29,9 +34,9 @@ const Carrusel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+          <img className="carrusel"
+            
+            src={imagen3}
             alt="Third slide"
           />
       
@@ -41,6 +46,8 @@ const Carrusel = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
+  </div>
     )
 }
 

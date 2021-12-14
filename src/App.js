@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "./components/Navbar/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carrusel from "./components/Carrusel/Carrusel";
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+
 
 //import './index.css';
 
@@ -13,6 +15,7 @@ const App = () => {
       </header>
       <body>
         <Carrusel/>
+        <ItemListContainer/>
       </body>
     </>
   );
